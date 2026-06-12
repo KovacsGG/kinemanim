@@ -1,7 +1,7 @@
 FROM manimcommunity/manim:v0.20.1
 
 USER root
-RUN pip install notebook
+RUN pip install notebook opencv-python
 
 ARG NB_USER=manimuser
 USER ${NB_USER}
